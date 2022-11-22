@@ -1,0 +1,107 @@
+body { 
+	width: 1200px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: auto;
+	color: white;
+	background-color: black;
+	font-size: 20px; 
+	font-family: system-ui;
+	text-align: center;
+}
+
+h1,h2,h3 {
+	color: #CA1C1C;
+}
+
+p {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+hr {
+	border: none;
+    border-top: 3px double #F6D56D;
+    color: #F6D56D;
+    overflow: visible;
+    text-align: center;
+    height: 5px; 
+}
+
+img {
+	border-style: solid;
+	border-color: #F6D56D;
+}
+
+fieldset {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #F6D56D;  
+}
+
+legend {
+	color: #CA1C1C;
+}
+
+a {
+	color: #F6D56D;
+}
+
+a:hover,a:focus,#page_actuel { 
+	color: #CA1C1C; 
+}
+
+#fond,#liens_page {
+	background-color: #280000;
+	border-style: solid;
+	border-color: #F6D56D;
+}
+
+#banner {
+	font-size: 60px; 
+	font-family: "Pristina",system-ui;
+}
+
+#annonceur,#sub_annonceur,#liens_page { 
+	width: auto;
+	font-family: "Pristina",system-ui;
+}
+
+#annonceur { 
+	font-size: 60px; 
+	color: #F6D56D;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#sub_annonceur {
+	font-size: 40px; 
+	color: #CA1C1C;
+}
+
+#liens_page {
+	font-size: 35px; 
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#img_kevin {
+	margin-right: 50px;
+}
+
+#img_maria {
+	margin-left: 50px;
+}
+
+#liste_hotel {
+	color: #F6D56D;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}

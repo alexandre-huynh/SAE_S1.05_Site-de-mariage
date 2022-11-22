@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Le mariage de Kévin et Maria</title>
+		<link rel="stylesheet" href="css/mariage.css"/>
+	</head>
+	<body id="formulaire">
+		<div id="fond">
+			<header>
+				<h1 id="banner">
+					<img id="img_kevin" height=100 src="./assets/kevin.png" alt="Photo de Kevin"/>
+					Le mariage de Kévin et Maria
+					<img id="img_maria" height=100 src="./assets/maria.png" alt="Photo de Maria"/>
+				</h1>
+			</header>
+			<nav id="liens_page">
+				<a href="page_accueil.html">Accueil</a>
+				<a href="page_histoire.html">Histoire</a>
+				<a href="page_programme.html">Programme</a>
+				<a href="page_organisation.html">Organisation</a>
+				<a id="page_actuel" href="page_formulaire.html">Formulaire</a>
+				<a href="page_contact_reseaux.html">Contact</a>
+			</nav>
+			<article>
+				<h2>Le formulaire</h2>
+				<p>
+					Si vous comptez assister au mariage, vous pouvez remplir ce formulaire afin
+					de nous donner une idée du nombre de participants et de mieux organiser
+					le mariage, la fête et le dîner.
+				</p>
+			</article>
+			<form>
+				<fieldset>
+					<legend>Votre identité</legend>
+					<p>
+						<label for="nom"> Nom : </label>
+						<input id="nom" type="text" name="nom" placeholder="Exemple: Leroy-Dunan" required/><br>
+						<label for="prenom"> Prénom : </label>
+						<input id="prenom" type="text" name="nom" placeholder="Exemple: Kévin" required/><br>
+						<label for="email">Email : </label>
+						<input id="email" type="email" placeholder="Ex: kevin.leroy-dunan@gmail.com"/><br>
+						<label for="statut">Vous êtes :</label>
+						<select name="statut" id="statut">
+							<option value="default">Sélectionner</option>
+							<option value="invite">Un invité</option>
+							<option value="ami">Un ami des mariés</option>
+							<option value="famille">De la famille</option>
+						</select>
+					</p>
+					<hr>
+					<p>
+						<label for="nb_accompagn"> Vous êtes accompagne par </label>
+						<input id="nb_accompagn" name="nb_accompagn" type="number" min="0" max="10" value="0"/> personnes dont
+						<input id="nb_enfants" name="nb_enfants" type="number" min="0" max="10" value="0"/> enfants<br><br>
+						Si vous êtes accompagné par un ou plusieurs proches, renseignez leur nom et prénom :<br><br>
+						
+						<label for="accompagn_1"> Accompagnateur 1 : </label>
+						<input id="accompagn_1" type="text" name="accompagn_1" placeholder="Exemple: Nunez Maria"/>
+						<label for="enfant1"> Enfant :</label>
+						<input type="checkbox" name="enfant1" id="enfant1"/><br>
+						
+						<label for="accompagn_2"> Accompagnateur 2 : </label>
+						<input id="accompagn_2" type="text" name="accompagn_2"/>
+						<label for="enfant2"> Enfant :</label>
+						<input type="checkbox" name="enfant2" id="enfant2"/><br>
+						
+						<label for="accompagn_3"> Accompagnateur 3 : </label>
+						<input id="accompagn_3" type="text" name="accompagn_3"/>
+						<label for="enfant3"> Enfant :</label>
+						<input type="checkbox" name="enfant3" id="enfant3"/><br>
+						
+						<label for="accompagn_4"> Accompagnateur 4 : </label>
+						<input id="accompagn_4" type="text" name="accompagn_4"/>
+						<label for="enfant4"> Enfant :</label>
+						<input type="checkbox" name="enfant4" id="enfant4"/><br><br>
+						
+						<label for="accompagn_plus"> 
+						Si vous êtes accompagné par plus de 4 personnes, <br>
+						notez les informations ici (nom, prénom, enfant ou adulte) :
+						</label><br><br>
+						<textarea id="accompagn_plus" name="accompagn_plus" cols="50" placeholder="Exemple: Leroy-Dunan Kevin adulte"></textarea><br>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Préférences pour le dîner</legend>
+					<p>
+						<label for="table_place">Vous voulez réserver une table pour :</label>
+						<select name="table_place" id="table_place">
+							<option value="default">Sélectionner</option>
+							<option value="2pers">2 personnes</option>
+							<option value="4pers">4 personnes</option>
+							<option value="6pers">6 personnes</option>
+							<option value="8pers">8 personnes</option>
+						</select><br><br>
+
+						<label for="table_pos">Vous préfèrez être assis :</label>
+						<select name="table_pos" id="table_pos">
+							<option value="default">Sélectionner</option>
+							<option value="table_maries">à la table des mariés</option>
+							<option value="table_close">près de la table des mariés</option>
+							<option value="table_bord">à une table au bord de la salle</option>
+							<option value="table_centre">à une table au centre de la salle</option>
+							<option value="table_corner">à une table dans un angle de la salle</option>
+						</select><br><br>
+						Notez que votre place à table dépendra des disponibilités.
+					</p>
+					<hr>
+					<p>
+						A propos du dîner, vous êtes : (cochez les cases selon votre cas)<br><br>
+						<input type="checkbox" name="vege" id="vege" />
+						<label for="vege">Végétarien</label><br>
+
+						<input type="checkbox" name="vegan" id="vegan" />
+						<label for="vegan">Vegan</label><br>
+						
+						<input type="checkbox" name="allergie" id="allergie" />
+						<label for="allergie">Allergique / intolérant</label>
+						<label for="desc_alrg"> au </label>
+						<input type="text" name="desc_alrg" id="desc_alrg" placeholder="Ex: lait, gluten, poisson..."/>
+					</p>
+					<hr>
+					<p>
+						A propos du menu, choisissez les plats que vous envisagez déguster le jour J :<br><br>
+						<input type="checkbox" name="plat1" id="plat1" />
+						<label for="plat1">Tiep Bou Dien</label><br>
+						<input type="checkbox" name="plat2" id="plat2" />
+						<label for="plat2">Mafé végétarien</label><br>
+						<input type="checkbox" name="plat3" id="plat3" />
+						<label for="plat3">Yassa de poulet</label>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Hébergement</legend>
+					<p>
+						<label for="ville">Vous habitez :</label>
+						<select name="ville" id="ville">
+							<option value="default">Sélectionner</option>
+							<option value="paris">Paris</option>
+							<option value="perpignan">Perpignan</option>
+							<option value="ile_de_france">en Ile de France</option>
+							<option value="autre">autre part</option>
+							<option value="autre_pays">dans un autre pays</option>
+						</select><br><br>
+						
+						<label for="hotel">Envisagez-vous de réserver une chambre dans un hôtel pour cet évènement ?</label><br>
+						<input type="radio" name="hotel" value="oui" id="oui" /> 
+						<label for="oui">Oui</label>
+						<input type="radio" name="hotel" value="non" id="non" />
+						<label for="non">Non</label><br><br>
+						
+						<label for="desc_hotel"> Si oui, à quel hôtel ? </label>
+						<input type="text" name="desc_hotel" id="desc_hotel" placeholder="Ex: Hôtel Le Cedre Saint Denis"/><br><br>
+						
+						<label for="heberge">Nécessitez-vous d'être hébergé pour cet évènement ?</label><br>
+						<input type="radio" name="heberge" value="oui" id="oui" /> 
+						<label for="oui">Oui</label>
+						<input type="radio" name="heberge" value="non" id="non" />
+						<label for="non">Non</label>
+					</p>
+				</fieldset>
+				<p>
+					<input type="submit" value="Valider"/>
+				</p>
+			</form>
+			<nav><a href="page_contact_reseaux.html">Cliquez-ici pour accéder à la page suivante: les moyens de contact.</a></nav><br>
+		</div>
+	</body>
+</html> 
