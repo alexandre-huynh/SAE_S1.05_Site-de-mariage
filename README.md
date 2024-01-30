@@ -1,6 +1,8 @@
 # SAÉ_S1.05_Site-de-mariage
 SAÉ S1.05 - Recueil de besoins | Création d'un site pour un couple de mariés 
 
+<a href="https://alexandre-huynh.github.io/SAE_S1.05_Site-de-mariage" title="Aperçu GitHub Pages" target="_blank">Aperçu GitHub Pages</a>
+
 Ce site a été réalisé en individuel dans le cadre d'une introduction au développement Web avec les langages HTML et CSS.
 
 L'objectif était d'établir un recueil de besoins auprès de clients fictifs représentant le couple de mariés, et d'établir une communication régulière par mails sur leurs besoins. 
